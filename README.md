@@ -1,10 +1,18 @@
 # MovieApp
 
+The Movie APP makes use of the https://developers.themoviedb.org/3/ API to show a list of movies and allow the user to view details of each and rate them.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Login Screen
+authenticate (via a login screen) with the following credentials:
+Username: voss-solutions
+Password: supersecretpassword
 
 ## Code scaffolding
 
