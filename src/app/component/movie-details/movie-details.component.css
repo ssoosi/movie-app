@@ -1,0 +1,9 @@
+.play-btn, .info-btn{
+background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 12px;
+    border-radius: 4px;
+    width: 150px;
+}

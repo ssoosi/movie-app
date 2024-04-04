@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class="banner mt-32">
+    @if(selectedMovie && selectedMovie.videoKey){
+    <iframe
+      class="banner-video"
+      [src]="
+        domSanitise.bypassSecurityTrustResourceUrl(
+          'https://www.youtube.com/embed/' + selectedMovie.videoKey + '?autoplay=1&mute=1&showinfo=0&controls=0'
+        )
+      "
+      frameborder="0"
+    ></iframe>
+    }@else{
+        <div class="float-left">
+            <img
+            class="banner-img p-6 "
+            [src]="tmdbConfig.imagePath + selectedMovie.poster_path"
+            alt="banner image"
+          />
+        </div>
+    
+    <div class="banner-movie-info text-white p-5">
+        <h1 class="banner-heading font-bold text-6xl">{{ selectedMovie.original_title }}</h1>
+        <p class="banner-date mt-4">Release Date - {{ selectedMovie.release_date }}</p>
+        <p class="banner-description mt-4 text-lg">{{ selectedMovie.overview }}</p>
+        <p class="banner-popularity mt-4 ">Popularity : {{ selectedMovie.popularity.toFixed(0) }}</p>
+        <p class="banner-vote_average mt-4">Vote Average : {{ selectedMovie.vote_average.toFixed(0) }}%</p>
+        <p class="banner-vote_count mt-4">Vote Count : {{ selectedMovie.vote_count }}</p>
+        <div class="banner-action">
+          <button type="button" class="play-btn mt-5">Play</button>
+         
+        </div>
+      </div>
+    }
+ 
+  </div>

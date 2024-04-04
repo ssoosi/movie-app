@@ -1,0 +1,10 @@
+@if(movie){
+    <div class="movie-card cursor-pointer" (click)="viewMovies()">
+      <img
+        [src]="tmdbConfig.imagePath + movie.poster_path"
+        alt="movie image"
+      />
+      <h4 class="title opacity-55">{{ movie.original_title }}</h4>
+   
+    </div>
+    }
