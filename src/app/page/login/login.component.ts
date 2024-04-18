@@ -32,7 +32,7 @@ export class LoginComponent {
 
 
   login(): void {
-    if (this.username === 'voss-solutions' && this.password === 'supersecretpassword') {
+    if (this.username === 'admin' && this.password === 'supersecretpassword') {
       // Authentication successful
       localStorage.setItem('isLoggedIn', 'true');
       this.router.navigateByUrl('/browse');

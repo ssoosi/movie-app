@@ -11,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Login Screen
 authenticate (via a login screen) with the following credentials:
-Username: voss-solutions
+Username: admin 
 Password: supersecretpassword
 
 ## Code scaffolding
